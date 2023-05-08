@@ -1,4 +1,4 @@
-# New-York-Restaurant-Inspections-Analysis-Dashboard
+# New York-Restaurant Inspections Analysis Dashboard
 
 <img width="1215" alt="Screenshot 2023-05-08 at 12 29 22 AM" src="https://user-images.githubusercontent.com/69577585/236734119-a5d9b1db-648a-4782-8871-a46d806b4dd6.png">
 <img width="1232" alt="Screenshot 2023-05-07 at 11 22 18 PM" src="https://user-images.githubusercontent.com/69577585/236728477-f0f286df-cbfc-4e63-b062-bb1cc561400a.png">
