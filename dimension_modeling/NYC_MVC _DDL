@@ -1,0 +1,1502 @@
+/*
+ * ER/Studio Data Architect SQL Code Generation
+ * Project :      NYC_MVC.DM1
+ *
+ * Date Created : Thursday, April 20, 2023 22:26:37
+ * Target DBMS : Microsoft SQL Server 2019
+ */
+
+/* 
+ * TABLE: dim_arrest_borough 
+ */
+
+CREATE TABLE dim_arrest_borough(
+    borough_sk       int            IDENTITY(1,1),
+    boro_code        char(1)        NULL,
+    borough          varchar(80)    NULL,
+    DI_JobID         varchar(20)    NULL,
+    DI_CreateDate    datetime       CONSTRAINT [DF__dim_arres__DI_Cr__664B26CC] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__dim_arre__E0852AFE06585144 PRIMARY KEY NONCLUSTERED (borough_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_arrest_borough') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_arrest_borough >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_arrest_borough >>>'
+go
+
+/* 
+ * TABLE: dim_bodily_injury 
+ */
+
+CREATE TABLE dim_bodily_injury(
+    bodily_injury_sk    int            IDENTITY(1,1),
+    bodily_injury       varchar(80)    NULL,
+    DI_JobID            varchar(20)    NULL,
+    DI_CreateDate       datetime       CONSTRAINT [DF__dim_bodil__DI_Cr__69279377] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_bodi__EAAA3DAB23A13561 PRIMARY KEY NONCLUSTERED (bodily_injury_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_bodily_injury') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_bodily_injury >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_bodily_injury >>>'
+go
+
+/* 
+ * TABLE: dim_complaint 
+ */
+
+CREATE TABLE dim_complaint(
+    complaint_sk     int             IDENTITY(1,1),
+    complaint        varchar(255)    NULL,
+    DI_JobID         varchar(20)     NULL,
+    DI_CreateDate    datetime        CONSTRAINT [DF__dim_compl__DI_Cr__6C040022] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_comp__A771015DD0B424B2 PRIMARY KEY NONCLUSTERED (complaint_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_complaint') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_complaint >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_complaint >>>'
+go
+
+/* 
+ * TABLE: dim_contributing_factor 
+ */
+
+CREATE TABLE dim_contributing_factor(
+    contributing_factor_sk    int             IDENTITY(1,1),
+    contributing_factor       varchar(255)    NULL,
+    DI_JobID                  varchar(20)     NULL,
+    DI_CreateDate             datetime        CONSTRAINT [DF__dim_contr__DI_Cr__6EE06CCD] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_cont__42111A5209111128 PRIMARY KEY NONCLUSTERED (contributing_factor_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_contributing_factor') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_contributing_factor >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_contributing_factor >>>'
+go
+
+/* 
+ * TABLE: dim_date 
+ */
+
+CREATE TABLE dim_date(
+    date_key                           int           NOT NULL,
+    date                               date          NOT NULL,
+    day_of_month                       tinyint       NOT NULL,
+    day_suffix                         varchar(4)    NOT NULL,
+    day_name                           varchar(9)    NOT NULL,
+    day_of_week                        tinyint       NOT NULL,
+    day_of_week_usa                    tinyint       NOT NULL,
+    running_count_of_day_in_month      tinyint       NOT NULL,
+    running_count_of_day_in_year       tinyint       NOT NULL,
+    running_count_of_day_in_quarter    tinyint       NOT NULL,
+    day_of_year                        smallint      NOT NULL,
+    week_of_month                      tinyint       NOT NULL,
+    week_of_quarter                    tinyint       NOT NULL,
+    week_of_year                       tinyint       NOT NULL,
+    month                              tinyint       NOT NULL,
+    month_name                         varchar(9)    NOT NULL,
+    month_of_quarter                   tinyint       NOT NULL,
+    quarter                            tinyint       NOT NULL,
+    quarter_name                       varchar(9)    NOT NULL,
+    year                               smallint      NOT NULL,
+    year_name                          char(7)       NOT NULL,
+    YYYYMM                             char(6)       NOT NULL,
+    MMYYYY                             char(6)       NOT NULL,
+    first_day_of_week_in_year          date          NOT NULL,
+    last_day_of_week_in_year           date          NOT NULL,
+    first_day_of_week                  date          NOT NULL,
+    last_day_of_week                   date          NOT NULL,
+    first_day_of_month                 date          NOT NULL,
+    last_day_of_month                  date          NOT NULL,
+    first_day_of_quarter               date          NOT NULL,
+    last_day_of_quarter                date          NOT NULL,
+    first_day_of_year                  date          NOT NULL,
+    last_day_of_year                   date          NOT NULL,
+    is_weekday                         bit           NOT NULL,
+    CONSTRAINT PK_Dim_date_date_key PRIMARY KEY NONCLUSTERED (date_key)
+)
+
+go
+
+
+IF OBJECT_ID('dim_date') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_date >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_date >>>'
+go
+
+/* 
+ * TABLE: dim_driver_license_jurisdiction 
+ */
+
+CREATE TABLE dim_driver_license_jurisdiction(
+    driver_license_jurisdiction_sk    int             IDENTITY(1,1),
+    driver_license_jurisdiction       varchar(255)    NULL,
+    DI_JobID                          varchar(20)     NULL,
+    DI_CreateDate                     datetime        CONSTRAINT [DF__dim_drive__DI_Cr__71BCD978] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_driv__FB52AD7693324AF3 PRIMARY KEY NONCLUSTERED (driver_license_jurisdiction_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_driver_license_jurisdiction') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_driver_license_jurisdiction >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_driver_license_jurisdiction >>>'
+go
+
+/* 
+ * TABLE: dim_driver_license_status 
+ */
+
+CREATE TABLE dim_driver_license_status(
+    driver_license_status_sk    int             IDENTITY(1,1),
+    driver_license_status       varchar(255)    NULL,
+    DI_JobID                    varchar(20)     NULL,
+    DI_CreateDate               datetime        CONSTRAINT [DF__dim_drive__DI_Cr__74994623] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_driv__9E900A2894A7D213 PRIMARY KEY NONCLUSTERED (driver_license_status_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_driver_license_status') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_driver_license_status >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_driver_license_status >>>'
+go
+
+/* 
+ * TABLE: dim_ejection 
+ */
+
+CREATE TABLE dim_ejection(
+    ejection_sk      int            IDENTITY(1,1),
+    ejection         varchar(80)    NULL,
+    DI_JobID         varchar(20)    NULL,
+    DI_CreateDate    datetime       CONSTRAINT [DF__dim_eject__DI_Cr__7775B2CE] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_ejec__34207734C9FA232D PRIMARY KEY NONCLUSTERED (ejection_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_ejection') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_ejection >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_ejection >>>'
+go
+
+/* 
+ * TABLE: dim_emotional_status 
+ */
+
+CREATE TABLE dim_emotional_status(
+    emotional_status_sk    int            IDENTITY(1,1),
+    emotional_status       varchar(80)    NULL,
+    DI_JobID               varchar(20)    NULL,
+    DI_CreateDate          datetime       CONSTRAINT [DF__dim_emoti__DI_Cr__7A521F79] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_emot__210691A6D500029C PRIMARY KEY NONCLUSTERED (emotional_status_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_emotional_status') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_emotional_status >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_emotional_status >>>'
+go
+
+/* 
+ * TABLE: dim_ped_action 
+ */
+
+CREATE TABLE dim_ped_action(
+    ped_action_sk    int             IDENTITY(1,1),
+    ped_action       varchar(255)    NULL,
+    DI_JobID         varchar(20)     NULL,
+    DI_CreateDate    datetime        CONSTRAINT [DF__dim_ped_a__DI_Cr__7D2E8C24] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_ped___6B89954550A9222A PRIMARY KEY NONCLUSTERED (ped_action_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_ped_action') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_ped_action >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_ped_action >>>'
+go
+
+/* 
+ * TABLE: dim_ped_location 
+ */
+
+CREATE TABLE dim_ped_location(
+    ped_location_sk    int             IDENTITY(1,1),
+    ped_location       varchar(255)    NULL,
+    DI_JobID           varchar(20)     NULL,
+    DI_CreateDate      datetime        CONSTRAINT [DF__dim_ped_l__DI_Cr__000AF8CF] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_ped___E94A1BFE41B6D0D4 PRIMARY KEY NONCLUSTERED (ped_location_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_ped_location') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_ped_location >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_ped_location >>>'
+go
+
+/* 
+ * TABLE: dim_ped_role 
+ */
+
+CREATE TABLE dim_ped_role(
+    ped_role_sk      int             IDENTITY(1,1),
+    ped_role         varchar(255)    NULL,
+    DI_JobID         varchar(20)     NULL,
+    DI_CreateDate    datetime        CONSTRAINT [DF__dim_ped_r__DI_Cr__02E7657A] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_ped___E61BE15472450E1A PRIMARY KEY NONCLUSTERED (ped_role_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_ped_role') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_ped_role >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_ped_role >>>'
+go
+
+/* 
+ * TABLE: dim_person_injury 
+ */
+
+CREATE TABLE dim_person_injury(
+    person_injury_sk    int            IDENTITY(1,1),
+    person_injury       varchar(80)    NULL,
+    DI_JobID            varchar(20)    NULL,
+    DI_CreateDate       datetime       CONSTRAINT [DF__dim_perso__DI_Cr__05C3D225] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_pers__012B124EEB2C20E9 PRIMARY KEY NONCLUSTERED (person_injury_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_person_injury') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_person_injury >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_person_injury >>>'
+go
+
+/* 
+ * TABLE: dim_person_sex 
+ */
+
+CREATE TABLE dim_person_sex(
+    person_sex_sk    int            IDENTITY(1,1),
+    person_sex       varchar(10)    NULL,
+    DI_JobID         varchar(20)    NULL,
+    DI_CreateDate    datetime       CONSTRAINT [DF__dim_perso__DI_Cr__08A03ED0] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_pers__C48DDCB1C4713CCB PRIMARY KEY NONCLUSTERED (person_sex_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_person_sex') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_person_sex >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_person_sex >>>'
+go
+
+/* 
+ * TABLE: dim_persontype 
+ */
+
+CREATE TABLE dim_persontype(
+    person_type_sk    int            IDENTITY(1,1),
+    person_type       varchar(80)    NULL,
+    DI_JobID          varchar(20)    NULL,
+    DI_CreateDate     datetime       CONSTRAINT [DF__dim_perso__DI_Cr__0B7CAB7B] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_pers__B35AE94D3D76330C PRIMARY KEY NONCLUSTERED (person_type_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_persontype') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_persontype >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_persontype >>>'
+go
+
+/* 
+ * TABLE: dim_point_of_impact 
+ */
+
+CREATE TABLE dim_point_of_impact(
+    point_of_impact_sk    int             IDENTITY(1,1),
+    point_of_impact       varchar(255)    NULL,
+    DI_JobID              varchar(20)     NULL,
+    DI_CreateDate         datetime        CONSTRAINT [DF__dim_point__DI_Cr__0E591826] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_poin__A4F7E03B1D61BA6F PRIMARY KEY NONCLUSTERED (point_of_impact_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_point_of_impact') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_point_of_impact >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_point_of_impact >>>'
+go
+
+/* 
+ * TABLE: dim_position_in_vehicle 
+ */
+
+CREATE TABLE dim_position_in_vehicle(
+    position_in_vehicle_sk    int             IDENTITY(1,1),
+    position_in_vehicle       varchar(255)    NULL,
+    DI_JobID                  varchar(20)     NULL,
+    DI_CreateDate             datetime        CONSTRAINT [DF__dim_posit__DI_Cr__113584D1] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_posi__C28EA187562FC768 PRIMARY KEY NONCLUSTERED (position_in_vehicle_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_position_in_vehicle') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_position_in_vehicle >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_position_in_vehicle >>>'
+go
+
+/* 
+ * TABLE: dim_pre_crash 
+ */
+
+CREATE TABLE dim_pre_crash(
+    pre_crash_sk     int             IDENTITY(1,1),
+    pre_crash        varchar(255)    NULL,
+    DI_JobID         varchar(20)     NULL,
+    DI_CreateDate    datetime        CONSTRAINT [DF__dim_pre_c__DI_Cr__1411F17C] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_pre___F719B649406901A6 PRIMARY KEY NONCLUSTERED (pre_crash_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_pre_crash') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_pre_crash >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_pre_crash >>>'
+go
+
+/* 
+ * TABLE: dim_public_property_damage 
+ */
+
+CREATE TABLE dim_public_property_damage(
+    public_property_damage_sk    int             IDENTITY(1,1),
+    public_property_damage       varchar(255)    NULL,
+    DI_JobID                     varchar(20)     NULL,
+    DI_CreateDate                datetime        CONSTRAINT [DF__dim_publi__DI_Cr__2FBA0BF1] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_publ__864A02AB209C423F PRIMARY KEY NONCLUSTERED (public_property_damage_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_public_property_damage') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_public_property_damage >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_public_property_damage >>>'
+go
+
+/* 
+ * TABLE: dim_safety_equipment 
+ */
+
+CREATE TABLE dim_safety_equipment(
+    safety_equipment_sk    int             IDENTITY(1,1),
+    safety_equipment       varchar(255)    NULL,
+    DI_JobID               varchar(20)     NULL,
+    DI_CreateDate          datetime        CONSTRAINT [DF__dim_safet__DI_Cr__16EE5E27] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_safe__16654047231BE313 PRIMARY KEY NONCLUSTERED (safety_equipment_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_safety_equipment') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_safety_equipment >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_safety_equipment >>>'
+go
+
+/* 
+ * TABLE: dim_state_registration 
+ */
+
+CREATE TABLE dim_state_registration(
+    state_registration_sk    int            IDENTITY(1,1),
+    state_registration       varchar(80)    NULL,
+    DI_JobID                 varchar(20)    NULL,
+    DI_CreateDate            datetime       CONSTRAINT [DF__dim_state__DI_Cr__19CACAD2] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_stat__747C07655B37ED21 PRIMARY KEY NONCLUSTERED (state_registration_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_state_registration') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_state_registration >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_state_registration >>>'
+go
+
+/* 
+ * TABLE: dim_travel_direction 
+ */
+
+CREATE TABLE dim_travel_direction(
+    travel_direction_sk    int             IDENTITY(1,1),
+    travel_direction       varchar(255)    NULL,
+    DI_JobID               varchar(20)     NULL,
+    DI_CreateDate          datetime        CONSTRAINT [DF__dim_trave__DI_Cr__1CA7377D] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_trav__85294B5CD6A578B8 PRIMARY KEY NONCLUSTERED (travel_direction_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_travel_direction') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_travel_direction >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_travel_direction >>>'
+go
+
+/* 
+ * TABLE: dim_vehicle_damage 
+ */
+
+CREATE TABLE dim_vehicle_damage(
+    vehicle_damage_sk    int             IDENTITY(1,1),
+    vehicle_damage       varchar(255)    NULL,
+    DI_JobID             varchar(20)     NULL,
+    DI_CreateDate        datetime        CONSTRAINT [DF__dim_vehic__DI_Cr__1F83A428] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_vehi__62E58AA6C01E3C5E PRIMARY KEY NONCLUSTERED (vehicle_damage_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_vehicle_damage') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_vehicle_damage >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_vehicle_damage >>>'
+go
+
+/* 
+ * TABLE: dim_vehicle_make 
+ */
+
+CREATE TABLE dim_vehicle_make(
+    vehicle_make_sk    int            IDENTITY(1,1),
+    vehicle_make       varchar(80)    NULL,
+    DI_JobID           varchar(20)    NULL,
+    DI_CreateDate      datetime       CONSTRAINT [DF__dim_vehic__DI_Cr__226010D3] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_vehi__2097416E5D96D852 PRIMARY KEY NONCLUSTERED (vehicle_make_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_vehicle_make') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_vehicle_make >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_vehicle_make >>>'
+go
+
+/* 
+ * TABLE: dim_vehicle_model 
+ */
+
+CREATE TABLE dim_vehicle_model(
+    vehicle_model_sk    int            IDENTITY(1,1),
+    vehicle_model       varchar(80)    NULL,
+    DI_JobID            varchar(20)    NULL,
+    DI_CreateDate       datetime       CONSTRAINT [DF__dim_vehic__DI_Cr__253C7D7E] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_vehi__79A9525E848F0ED9 PRIMARY KEY NONCLUSTERED (vehicle_model_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_vehicle_model') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_vehicle_model >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_vehicle_model >>>'
+go
+
+/* 
+ * TABLE: dim_vehicle_type 
+ */
+
+CREATE TABLE dim_vehicle_type(
+    vehicle_type_sk    int            IDENTITY(1,1),
+    vehicle_type       varchar(80)    NULL,
+    DI_JobID           varchar(20)    NULL,
+    DI_CreateDate      datetime       CONSTRAINT [DF__dim_vehic__DI_Cr__2818EA29] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__dim_vehi__2A00DD57B7F05ACB PRIMARY KEY NONCLUSTERED (vehicle_type_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_vehicle_type') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_vehicle_type >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_vehicle_type >>>'
+go
+
+/* 
+ * TABLE: dim_vehicle_type_code 
+ */
+
+CREATE TABLE dim_vehicle_type_code(
+    vehicle_type_code_sk    int            IDENTITY(1,1),
+    vehicle_type_code       varchar(80)    NULL,
+    DI_JobID                varchar(20)    NULL,
+    DI_CreateDate           datetime       CONSTRAINT [DF__dim_vehic__DI_Cr__2AF556D4] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__dim_vehi__1E3395E6548ADFFF PRIMARY KEY NONCLUSTERED (vehicle_type_code_sk)
+)
+
+go
+
+
+IF OBJECT_ID('dim_vehicle_type_code') IS NOT NULL
+    PRINT '<<< CREATED TABLE dim_vehicle_type_code >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE dim_vehicle_type_code >>>'
+go
+
+/* 
+ * TABLE: err_model_year 
+ */
+
+CREATE TABLE err_model_year(
+    unique_id        int            NULL,
+    collision_id     int            NULL,
+    crash_date       datetime       NULL,
+    vehicle_year     varchar(80)    NULL,
+    DI_JobID         varchar(20)    NULL,
+    DI_CreateDate    datetime       CONSTRAINT [DF__err_model__DI_Cr__2CDD9F46] DEFAULT (getdate()) NOT NULL
+)
+
+go
+
+
+IF OBJECT_ID('err_model_year') IS NOT NULL
+    PRINT '<<< CREATED TABLE err_model_year >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE err_model_year >>>'
+go
+
+/* 
+ * TABLE: fct_collision_crashes 
+ */
+
+CREATE TABLE fct_collision_crashes(
+    collision_sk                      bigint            IDENTITY(1,1),
+    collision_id                      bigint            NULL,
+    collision_dt                      datetime          NULL,
+    collision_dt_sk                   int               NULL,
+    collision_day                     int               NULL,
+    collision_time                    time(7)           NULL,
+    collision_hour                    int               NULL,
+    collision_dayoftheweek            int               NULL,
+    borough_sk                        int               NULL,
+    borough                           varchar(80)       NULL,
+    zip_code                          varchar(40)       NULL,
+    off_street_name                   varchar(40)       NULL,
+    on_street_name                    varchar(40)       NULL,
+    cross_street_name                 varchar(40)       NULL,
+    latitude                          numeric(24, 6)    NULL,
+    longitude                         numeric(24, 6)    NULL,
+    location                          varchar(256)      NULL,
+    number_of_cyclist_injured         int               NULL,
+    number_of_cyclist_killed          int               NULL,
+    number_of_motorist_injured        int               NULL,
+    number_of_motorist_killed         int               NULL,
+    number_of_pedestrians_injured     int               NULL,
+    number_of_pedestrians_killed      int               NULL,
+    number_of_persons_injured         int               NULL,
+    number_of_persons_killed          int               NULL,
+    number_of_vehicles_involved       int               NULL,
+    number_of_contributing_factors    int               NULL,
+    DI_JobID                          varchar(20)       NULL,
+    DI_CreateDate                     datetime          CONSTRAINT [DF__fct_colli__DI_Cr__058EC7FB] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__fct_coll__998179021E963912 PRIMARY KEY NONCLUSTERED (collision_sk)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collision_crashes') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collision_crashes >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collision_crashes >>>'
+go
+
+/* 
+ * TABLE: fct_collision_crashes_vehicles 
+ */
+
+CREATE TABLE fct_collision_crashes_vehicles(
+    vehicle_number                    int            IDENTITY(1,1),
+    collision_sk                      bigint         NOT NULL,
+    collision_id                      bigint         NOT NULL,
+    vehicle_type_code_sk              int            NULL,
+    contributing_factor_vehicle_sk    int            NOT NULL,
+    DI_JobID                          varchar(20)    NULL,
+    DI_CreateDate                     datetime       CONSTRAINT [DF__fct_colli__DI_Cr__095F58DF] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__fct_coll__3B567AC081A1E7E5 PRIMARY KEY NONCLUSTERED (vehicle_number, collision_sk)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collision_crashes_vehicles') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collision_crashes_vehicles >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collision_crashes_vehicles >>>'
+go
+
+/* 
+ * TABLE: fct_collision_persons 
+ */
+
+CREATE TABLE fct_collision_persons(
+    unique_id                 int            NOT NULL,
+    collision_id              int            NULL,
+    person_id                 varchar(80)    NULL,
+    person_type_sk            int            NOT NULL,
+    person_injury_sk          int            NOT NULL,
+    vehicle_id                varchar(80)    NULL,
+    person_age                int            NULL,
+    ejection_sk               int            NOT NULL,
+    emotional_status_sk       int            NOT NULL,
+    bodily_injury_sk          int            NOT NULL,
+    position_in_vehicle_sk    int            NOT NULL,
+    safety_equipment_sk       int            NOT NULL,
+    ped_location_sk           int            NOT NULL,
+    ped_action_sk             int            NOT NULL,
+    complaint_sk              int            NOT NULL,
+    ped_role_sk               int            NOT NULL,
+    person_sex_sk             int            NOT NULL,
+    DI_JobID                  varchar(20)    NULL,
+    DI_CreateDate             datetime       CONSTRAINT [DF__fct_colli__DI_Cr__3D14070F] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__fct_coll__A2929130E93E1751 PRIMARY KEY NONCLUSTERED (unique_id)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collision_persons') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collision_persons >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collision_persons >>>'
+go
+
+/* 
+ * TABLE: fct_collision_persons_contributing_factors 
+ */
+
+CREATE TABLE fct_collision_persons_contributing_factors(
+    table_sk                  int            IDENTITY(1,1),
+    unique_id                 int            NOT NULL,
+    collision_id              int            NULL,
+    person_id                 varchar(80)    NULL,
+    factor_number             int            NULL,
+    contributing_factor_sk    int            NOT NULL,
+    DI_JobID                  varchar(20)    NULL,
+    DI_CreateDate             datetime       CONSTRAINT [DF__fct_colli__DI_Cr__3FF073BA] DEFAULT (getdate()) NULL,
+    CONSTRAINT PK__fct_coll__B21EBE795ADA0108 PRIMARY KEY NONCLUSTERED (table_sk)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collision_persons_contributing_factors') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collision_persons_contributing_factors >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collision_persons_contributing_factors >>>'
+go
+
+/* 
+ * TABLE: fct_collisions_vehicles 
+ */
+
+CREATE TABLE fct_collisions_vehicles(
+    unique_id                         int              NOT NULL,
+    collision_id                      int              NULL,
+    vehicle_id                        varchar(80)      NULL,
+    state_registration_sk             int              NOT NULL,
+    vehicle_type_sk                   int              NOT NULL,
+    vehicle_make_sk                   int              NOT NULL,
+    vehicle_model_sk                  int              NOT NULL,
+    vehicle_year                      varchar(80)      NULL,
+    travel_direction_sk               int              NOT NULL,
+    vehicle_occupants                 int              NULL,
+    person_sex_sk                     int              NOT NULL,
+    driver_license_status_sk          int              NOT NULL,
+    driver_license_jurisdiction_sk    int              NOT NULL,
+    pre_crash_sk                      int              NOT NULL,
+    point_of_impact_sk                int              NOT NULL,
+    public_property_damage_sk         int              NOT NULL,
+    public_property_damage_type       varchar(1024)    NULL,
+    DI_JobID                          varchar(20)      NULL,
+    DI_CreateDate                     datetime         CONSTRAINT [DF__fct_colli__DI_Cr__42CCE065] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__fct_coll__A2929130F83A02E5 PRIMARY KEY NONCLUSTERED (unique_id)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collisions_vehicles') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collisions_vehicles >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collisions_vehicles >>>'
+go
+
+/* 
+ * TABLE: fct_collisions_vehicles_contributing_factors 
+ */
+
+CREATE TABLE fct_collisions_vehicles_contributing_factors(
+    table_sk                       int            IDENTITY(1,1),
+    unique_id                      int            NOT NULL,
+    collision_id                   int            NULL,
+    vehicle_id                     varchar(80)    NULL,
+    vehicle_contributing_number    int            NULL,
+    contributing_factor_sk         int            NOT NULL,
+    DI_JobID                       varchar(20)    NULL,
+    DI_CreateDate                  datetime       CONSTRAINT [DF__fct_colli__DI_Cr__45A94D10] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__fct_coll__B21EBE795187A137 PRIMARY KEY NONCLUSTERED (table_sk)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collisions_vehicles_contributing_factors') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collisions_vehicles_contributing_factors >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collisions_vehicles_contributing_factors >>>'
+go
+
+/* 
+ * TABLE: fct_collisions_vehicles_vehicle_damage 
+ */
+
+CREATE TABLE fct_collisions_vehicles_vehicle_damage(
+    table_sk                 int            IDENTITY(1,1),
+    unique_id                int            NOT NULL,
+    collision_id             int            NULL,
+    vehicle_id               varchar(80)    NULL,
+    vehicle_damage_number    int            NULL,
+    vehicle_damage_sk        int            NOT NULL,
+    DI_JobID                 varchar(20)    NULL,
+    DI_CreateDate            datetime       CONSTRAINT [DF__fct_colli__DI_Cr__4885B9BB] DEFAULT (getdate()) NOT NULL,
+    CONSTRAINT PK__fct_coll__B21EBE79DA199315 PRIMARY KEY NONCLUSTERED (table_sk)
+)
+
+go
+
+
+IF OBJECT_ID('fct_collisions_vehicles_vehicle_damage') IS NOT NULL
+    PRINT '<<< CREATED TABLE fct_collisions_vehicles_vehicle_damage >>>'
+ELSE
+    PRINT '<<< FAILED CREATING TABLE fct_collisions_vehicles_vehicle_damage >>>'
+go
+
+/* 
+ * INDEX: Ref3234 
+ */
+
+CREATE INDEX Ref3234 ON err_model_year(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('err_model_year') AND name='Ref3234')
+    PRINT '<<< CREATED INDEX err_model_year.Ref3234 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX err_model_year.Ref3234 >>>'
+go
+
+/* 
+ * INDEX: Refdim_date_1 
+ */
+
+CREATE INDEX Refdim_date_1 ON fct_collision_crashes(collision_dt_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_crashes') AND name='Refdim_date_1')
+    PRINT '<<< CREATED INDEX fct_collision_crashes.Refdim_date_1 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_crashes.Refdim_date_1 >>>'
+go
+
+/* 
+ * INDEX: Refdim_arrest_borough 
+ */
+
+CREATE INDEX Refdim_arrest_borough ON fct_collision_crashes(borough_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_crashes') AND name='Refdim_arrest_borough')
+    PRINT '<<< CREATED INDEX fct_collision_crashes.Refdim_arrest_borough >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_crashes.Refdim_arrest_borough >>>'
+go
+
+/* 
+ * INDEX: Refdim_vehicle_type_code26 
+ */
+
+CREATE INDEX Refdim_vehicle_type_code26 ON fct_collision_crashes_vehicles(vehicle_type_code_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_crashes_vehicles') AND name='Refdim_vehicle_type_code26')
+    PRINT '<<< CREATED INDEX fct_collision_crashes_vehicles.Refdim_vehicle_type_code26 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_crashes_vehicles.Refdim_vehicle_type_code26 >>>'
+go
+
+/* 
+ * INDEX: RefDim_PERSON_SEX 
+ */
+
+CREATE INDEX RefDim_PERSON_SEX ON fct_collision_persons(person_sex_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PERSON_SEX')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PERSON_SEX >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PERSON_SEX >>>'
+go
+
+/* 
+ * INDEX: RefDim_PersonType 
+ */
+
+CREATE INDEX RefDim_PersonType ON fct_collision_persons(person_type_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PersonType')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PersonType >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PersonType >>>'
+go
+
+/* 
+ * INDEX: RefDim_EJECTION 
+ */
+
+CREATE INDEX RefDim_EJECTION ON fct_collision_persons(ejection_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_EJECTION')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_EJECTION >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_EJECTION >>>'
+go
+
+/* 
+ * INDEX: RefDim_EMOTIONAL_STATUS 
+ */
+
+CREATE INDEX RefDim_EMOTIONAL_STATUS ON fct_collision_persons(emotional_status_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_EMOTIONAL_STATUS')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_EMOTIONAL_STATUS >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_EMOTIONAL_STATUS >>>'
+go
+
+/* 
+ * INDEX: RefDim_POSITION_IN_VEHICLE 
+ */
+
+CREATE INDEX RefDim_POSITION_IN_VEHICLE ON fct_collision_persons(position_in_vehicle_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_POSITION_IN_VEHICLE')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_POSITION_IN_VEHICLE >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_POSITION_IN_VEHICLE >>>'
+go
+
+/* 
+ * INDEX: RefDim_PED_ACTION 
+ */
+
+CREATE INDEX RefDim_PED_ACTION ON fct_collision_persons(ped_action_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PED_ACTION')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PED_ACTION >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PED_ACTION >>>'
+go
+
+/* 
+ * INDEX: RefDim_BODILY_INJURY 
+ */
+
+CREATE INDEX RefDim_BODILY_INJURY ON fct_collision_persons(bodily_injury_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_BODILY_INJURY')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_BODILY_INJURY >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_BODILY_INJURY >>>'
+go
+
+/* 
+ * INDEX: RefDim_PED_LOCATION 
+ */
+
+CREATE INDEX RefDim_PED_LOCATION ON fct_collision_persons(ped_location_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PED_LOCATION')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PED_LOCATION >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PED_LOCATION >>>'
+go
+
+/* 
+ * INDEX: RefDim_COMPLAINT 
+ */
+
+CREATE INDEX RefDim_COMPLAINT ON fct_collision_persons(complaint_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_COMPLAINT')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_COMPLAINT >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_COMPLAINT >>>'
+go
+
+/* 
+ * INDEX: RefDim_PED_ROLE 
+ */
+
+CREATE INDEX RefDim_PED_ROLE ON fct_collision_persons(ped_role_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PED_ROLE')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PED_ROLE >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PED_ROLE >>>'
+go
+
+/* 
+ * INDEX: RefDim_SAFETY_EQUIPMENT 
+ */
+
+CREATE INDEX RefDim_SAFETY_EQUIPMENT ON fct_collision_persons(safety_equipment_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_SAFETY_EQUIPMENT')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_SAFETY_EQUIPMENT >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_SAFETY_EQUIPMENT >>>'
+go
+
+/* 
+ * INDEX: RefDim_PERSON_INJURY 
+ */
+
+CREATE INDEX RefDim_PERSON_INJURY ON fct_collision_persons(person_injury_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons') AND name='RefDim_PERSON_INJURY')
+    PRINT '<<< CREATED INDEX fct_collision_persons.RefDim_PERSON_INJURY >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons.RefDim_PERSON_INJURY >>>'
+go
+
+/* 
+ * INDEX: Reffct_collision_persons 
+ */
+
+CREATE INDEX Reffct_collision_persons ON fct_collision_persons_contributing_factors(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons_contributing_factors') AND name='Reffct_collision_persons')
+    PRINT '<<< CREATED INDEX fct_collision_persons_contributing_factors.Reffct_collision_persons >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons_contributing_factors.Reffct_collision_persons >>>'
+go
+
+/* 
+ * INDEX: RefDim_CONTRIBUTING_FACTOR 
+ */
+
+CREATE INDEX RefDim_CONTRIBUTING_FACTOR ON fct_collision_persons_contributing_factors(contributing_factor_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons_contributing_factors') AND name='RefDim_CONTRIBUTING_FACTOR')
+    PRINT '<<< CREATED INDEX fct_collision_persons_contributing_factors.RefDim_CONTRIBUTING_FACTOR >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons_contributing_factors.RefDim_CONTRIBUTING_FACTOR >>>'
+go
+
+/* 
+ * INDEX: Ref3437 
+ */
+
+CREATE INDEX Ref3437 ON fct_collision_persons_contributing_factors(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collision_persons_contributing_factors') AND name='Ref3437')
+    PRINT '<<< CREATED INDEX fct_collision_persons_contributing_factors.Ref3437 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collision_persons_contributing_factors.Ref3437 >>>'
+go
+
+/* 
+ * INDEX: RefDim_POINT_OF_IMPACT2 
+ */
+
+CREATE INDEX RefDim_POINT_OF_IMPACT2 ON fct_collisions_vehicles(point_of_impact_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_POINT_OF_IMPACT2')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_POINT_OF_IMPACT2 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_POINT_OF_IMPACT2 >>>'
+go
+
+/* 
+ * INDEX: RefDim_VEHICLE_MAKE9 
+ */
+
+CREATE INDEX RefDim_VEHICLE_MAKE9 ON fct_collisions_vehicles(vehicle_make_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_VEHICLE_MAKE9')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_VEHICLE_MAKE9 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_VEHICLE_MAKE9 >>>'
+go
+
+/* 
+ * INDEX: RefDim_VEHICLE_MODEL13 
+ */
+
+CREATE INDEX RefDim_VEHICLE_MODEL13 ON fct_collisions_vehicles(vehicle_model_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_VEHICLE_MODEL13')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_VEHICLE_MODEL13 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_VEHICLE_MODEL13 >>>'
+go
+
+/* 
+ * INDEX: RefDim_PRE_CRASH14 
+ */
+
+CREATE INDEX RefDim_PRE_CRASH14 ON fct_collisions_vehicles(pre_crash_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_PRE_CRASH14')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_PRE_CRASH14 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_PRE_CRASH14 >>>'
+go
+
+/* 
+ * INDEX: RefDim_VEHICLE_TYPE21 
+ */
+
+CREATE INDEX RefDim_VEHICLE_TYPE21 ON fct_collisions_vehicles(vehicle_type_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_VEHICLE_TYPE21')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_VEHICLE_TYPE21 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_VEHICLE_TYPE21 >>>'
+go
+
+/* 
+ * INDEX: RefDim_PUBLIC_PROPERTY_DAMAGE22 
+ */
+
+CREATE INDEX RefDim_PUBLIC_PROPERTY_DAMAGE22 ON fct_collisions_vehicles(public_property_damage_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_PUBLIC_PROPERTY_DAMAGE22')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_PUBLIC_PROPERTY_DAMAGE22 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_PUBLIC_PROPERTY_DAMAGE22 >>>'
+go
+
+/* 
+ * INDEX: RefDim_DRIVER_LICENSE_JURISDICTION29 
+ */
+
+CREATE INDEX RefDim_DRIVER_LICENSE_JURISDICTION29 ON fct_collisions_vehicles(driver_license_jurisdiction_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_DRIVER_LICENSE_JURISDICTION29')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_DRIVER_LICENSE_JURISDICTION29 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_DRIVER_LICENSE_JURISDICTION29 >>>'
+go
+
+/* 
+ * INDEX: RefDim_STATE_REGISTRATION30 
+ */
+
+CREATE INDEX RefDim_STATE_REGISTRATION30 ON fct_collisions_vehicles(state_registration_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_STATE_REGISTRATION30')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_STATE_REGISTRATION30 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_STATE_REGISTRATION30 >>>'
+go
+
+/* 
+ * INDEX: RefDim_PERSON_SEX32 
+ */
+
+CREATE INDEX RefDim_PERSON_SEX32 ON fct_collisions_vehicles(person_sex_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_PERSON_SEX32')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_PERSON_SEX32 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_PERSON_SEX32 >>>'
+go
+
+/* 
+ * INDEX: RefDim_DRIVER_LICENSE_STATUS33 
+ */
+
+CREATE INDEX RefDim_DRIVER_LICENSE_STATUS33 ON fct_collisions_vehicles(driver_license_status_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_DRIVER_LICENSE_STATUS33')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_DRIVER_LICENSE_STATUS33 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_DRIVER_LICENSE_STATUS33 >>>'
+go
+
+/* 
+ * INDEX: RefDim_TRAVEL_DIRECTION34 
+ */
+
+CREATE INDEX RefDim_TRAVEL_DIRECTION34 ON fct_collisions_vehicles(travel_direction_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles') AND name='RefDim_TRAVEL_DIRECTION34')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles.RefDim_TRAVEL_DIRECTION34 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles.RefDim_TRAVEL_DIRECTION34 >>>'
+go
+
+/* 
+ * INDEX: Reffct_Collisions_Vehicles18 
+ */
+
+CREATE INDEX Reffct_Collisions_Vehicles18 ON fct_collisions_vehicles_contributing_factors(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_contributing_factors') AND name='Reffct_Collisions_Vehicles18')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_contributing_factors.Reffct_Collisions_Vehicles18 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_contributing_factors.Reffct_Collisions_Vehicles18 >>>'
+go
+
+/* 
+ * INDEX: RefDim_CONTRIBUTING_FACTOR25 
+ */
+
+CREATE INDEX RefDim_CONTRIBUTING_FACTOR25 ON fct_collisions_vehicles_contributing_factors(contributing_factor_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_contributing_factors') AND name='RefDim_CONTRIBUTING_FACTOR25')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_contributing_factors.RefDim_CONTRIBUTING_FACTOR25 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_contributing_factors.RefDim_CONTRIBUTING_FACTOR25 >>>'
+go
+
+/* 
+ * INDEX: Ref3235 
+ */
+
+CREATE INDEX Ref3235 ON fct_collisions_vehicles_contributing_factors(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_contributing_factors') AND name='Ref3235')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_contributing_factors.Ref3235 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_contributing_factors.Ref3235 >>>'
+go
+
+/* 
+ * INDEX: RefDim_VEHICLE_DAMAGE1 
+ */
+
+CREATE INDEX RefDim_VEHICLE_DAMAGE1 ON fct_collisions_vehicles_vehicle_damage(vehicle_damage_sk)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_vehicle_damage') AND name='RefDim_VEHICLE_DAMAGE1')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_vehicle_damage.RefDim_VEHICLE_DAMAGE1 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_vehicle_damage.RefDim_VEHICLE_DAMAGE1 >>>'
+go
+
+/* 
+ * INDEX: Reffct_Collisions_Vehicles19 
+ */
+
+CREATE INDEX Reffct_Collisions_Vehicles19 ON fct_collisions_vehicles_vehicle_damage(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_vehicle_damage') AND name='Reffct_Collisions_Vehicles19')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_vehicle_damage.Reffct_Collisions_Vehicles19 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_vehicle_damage.Reffct_Collisions_Vehicles19 >>>'
+go
+
+/* 
+ * INDEX: Ref3233 
+ */
+
+CREATE INDEX Ref3233 ON fct_collisions_vehicles_vehicle_damage(unique_id)
+go
+IF EXISTS (SELECT * FROM sys.indexes WHERE object_id=OBJECT_ID('fct_collisions_vehicles_vehicle_damage') AND name='Ref3233')
+    PRINT '<<< CREATED INDEX fct_collisions_vehicles_vehicle_damage.Ref3233 >>>'
+ELSE
+    PRINT '<<< FAILED CREATING INDEX fct_collisions_vehicles_vehicle_damage.Ref3233 >>>'
+go
+
+/* 
+ * TABLE: err_model_year 
+ */
+
+ALTER TABLE err_model_year ADD CONSTRAINT Reffct_collision_persons34 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collision_persons(unique_id)
+go
+
+ALTER TABLE err_model_year ADD CONSTRAINT Reffct_collisions_vehicles36 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collisions_vehicles(unique_id)
+go
+
+
+/* 
+ * TABLE: fct_collision_crashes 
+ */
+
+ALTER TABLE fct_collision_crashes ADD CONSTRAINT Refdim_arrest_borough 
+    FOREIGN KEY (borough_sk)
+    REFERENCES dim_arrest_borough(borough_sk)
+go
+
+ALTER TABLE fct_collision_crashes ADD CONSTRAINT Refdim_date_1 
+    FOREIGN KEY (collision_dt_sk)
+    REFERENCES dim_date(date_key)
+go
+
+
+/* 
+ * TABLE: fct_collision_crashes_vehicles 
+ */
+
+ALTER TABLE fct_collision_crashes_vehicles ADD CONSTRAINT Refdim_vehicle_type_code26 
+    FOREIGN KEY (vehicle_type_code_sk)
+    REFERENCES dim_vehicle_type_code(vehicle_type_code_sk)
+go
+
+
+/* 
+ * TABLE: fct_collision_persons 
+ */
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_BODILY_INJURY 
+    FOREIGN KEY (bodily_injury_sk)
+    REFERENCES dim_bodily_injury(bodily_injury_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_COMPLAINT 
+    FOREIGN KEY (complaint_sk)
+    REFERENCES dim_complaint(complaint_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_EJECTION 
+    FOREIGN KEY (ejection_sk)
+    REFERENCES dim_ejection(ejection_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_EMOTIONAL_STATUS 
+    FOREIGN KEY (emotional_status_sk)
+    REFERENCES dim_emotional_status(emotional_status_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PED_ACTION 
+    FOREIGN KEY (ped_action_sk)
+    REFERENCES dim_ped_action(ped_action_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PED_LOCATION 
+    FOREIGN KEY (ped_location_sk)
+    REFERENCES dim_ped_location(ped_location_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PED_ROLE 
+    FOREIGN KEY (ped_role_sk)
+    REFERENCES dim_ped_role(ped_role_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PERSON_INJURY 
+    FOREIGN KEY (person_injury_sk)
+    REFERENCES dim_person_injury(person_injury_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PERSON_SEX 
+    FOREIGN KEY (person_sex_sk)
+    REFERENCES dim_person_sex(person_sex_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_PersonType 
+    FOREIGN KEY (person_type_sk)
+    REFERENCES dim_persontype(person_type_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_POSITION_IN_VEHICLE 
+    FOREIGN KEY (position_in_vehicle_sk)
+    REFERENCES dim_position_in_vehicle(position_in_vehicle_sk)
+go
+
+ALTER TABLE fct_collision_persons ADD CONSTRAINT RefDim_SAFETY_EQUIPMENT 
+    FOREIGN KEY (safety_equipment_sk)
+    REFERENCES dim_safety_equipment(safety_equipment_sk)
+go
+
+
+/* 
+ * TABLE: fct_collision_persons_contributing_factors 
+ */
+
+ALTER TABLE fct_collision_persons_contributing_factors ADD CONSTRAINT Reffct_collisions_vehicles37 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collisions_vehicles(unique_id)
+go
+
+ALTER TABLE fct_collision_persons_contributing_factors ADD CONSTRAINT RefDim_CONTRIBUTING_FACTOR 
+    FOREIGN KEY (contributing_factor_sk)
+    REFERENCES dim_contributing_factor(contributing_factor_sk)
+go
+
+ALTER TABLE fct_collision_persons_contributing_factors ADD CONSTRAINT Reffct_collision_persons 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collision_persons(unique_id)
+go
+
+
+/* 
+ * TABLE: fct_collisions_vehicles 
+ */
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_DRIVER_LICENSE_JURISDICTION29 
+    FOREIGN KEY (driver_license_jurisdiction_sk)
+    REFERENCES dim_driver_license_jurisdiction(driver_license_jurisdiction_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_DRIVER_LICENSE_STATUS33 
+    FOREIGN KEY (driver_license_status_sk)
+    REFERENCES dim_driver_license_status(driver_license_status_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_PERSON_SEX32 
+    FOREIGN KEY (person_sex_sk)
+    REFERENCES dim_person_sex(person_sex_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_POINT_OF_IMPACT2 
+    FOREIGN KEY (point_of_impact_sk)
+    REFERENCES dim_point_of_impact(point_of_impact_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_PRE_CRASH14 
+    FOREIGN KEY (pre_crash_sk)
+    REFERENCES dim_pre_crash(pre_crash_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_PUBLIC_PROPERTY_DAMAGE22 
+    FOREIGN KEY (public_property_damage_sk)
+    REFERENCES dim_public_property_damage(public_property_damage_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_STATE_REGISTRATION30 
+    FOREIGN KEY (state_registration_sk)
+    REFERENCES dim_state_registration(state_registration_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_TRAVEL_DIRECTION34 
+    FOREIGN KEY (travel_direction_sk)
+    REFERENCES dim_travel_direction(travel_direction_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_VEHICLE_MAKE9 
+    FOREIGN KEY (vehicle_make_sk)
+    REFERENCES dim_vehicle_make(vehicle_make_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_VEHICLE_MODEL13 
+    FOREIGN KEY (vehicle_model_sk)
+    REFERENCES dim_vehicle_model(vehicle_model_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles ADD CONSTRAINT RefDim_VEHICLE_TYPE21 
+    FOREIGN KEY (vehicle_type_sk)
+    REFERENCES dim_vehicle_type(vehicle_type_sk)
+go
+
+
+/* 
+ * TABLE: fct_collisions_vehicles_contributing_factors 
+ */
+
+ALTER TABLE fct_collisions_vehicles_contributing_factors ADD CONSTRAINT Reffct_collision_persons35 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collision_persons(unique_id)
+go
+
+ALTER TABLE fct_collisions_vehicles_contributing_factors ADD CONSTRAINT RefDim_CONTRIBUTING_FACTOR25 
+    FOREIGN KEY (contributing_factor_sk)
+    REFERENCES dim_contributing_factor(contributing_factor_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles_contributing_factors ADD CONSTRAINT Reffct_Collisions_Vehicles18 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collisions_vehicles(unique_id)
+go
+
+
+/* 
+ * TABLE: fct_collisions_vehicles_vehicle_damage 
+ */
+
+ALTER TABLE fct_collisions_vehicles_vehicle_damage ADD CONSTRAINT Reffct_collision_persons33 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collision_persons(unique_id)
+go
+
+ALTER TABLE fct_collisions_vehicles_vehicle_damage ADD CONSTRAINT RefDim_VEHICLE_DAMAGE1 
+    FOREIGN KEY (vehicle_damage_sk)
+    REFERENCES dim_vehicle_damage(vehicle_damage_sk)
+go
+
+ALTER TABLE fct_collisions_vehicles_vehicle_damage ADD CONSTRAINT Reffct_Collisions_Vehicles19 
+    FOREIGN KEY (unique_id)
+    REFERENCES fct_collisions_vehicles(unique_id)
+go
+
+
