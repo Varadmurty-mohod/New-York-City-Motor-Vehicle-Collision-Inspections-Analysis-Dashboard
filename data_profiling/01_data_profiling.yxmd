@@ -1,0 +1,1112 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.3">
+  <Nodes>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="55" width="518" height="362" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Motor_Vehicle_Collisions_-_Vehicles</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>10000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="UNIQUE_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="COLLISION_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="CRASH_DATE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="CRASH_TIME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="STATE_REGISTRATION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_TYPE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_MAKE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_MODEL" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_YEAR" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="TRAVEL_DIRECTION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_OCCUPANTS" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="DRIVER_SEX" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="DRIVER_LICENSE_STATUS" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="DRIVER_LICENSE_JURISDICTION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="PRE_CRASH" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="POINT_OF_IMPACT" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_DAMAGE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_DAMAGE_1" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_DAMAGE_2" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_DAMAGE_3" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="PUBLIC_PROPERTY_DAMAGE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="PUBLIC_PROPERTY_DAMAGE_TYPE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING_FACTOR_1" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING_FACTOR_2" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="344" y="129" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings>
+            <Position x="344" y="249" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">UNIQUE_ID=True,COLLISION_ID=True,CRASH_DATE=True,CRASH_TIME=True,VEHICLE_ID=True,STATE_REGISTRATION=True,VEHICLE_TYPE=True,VEHICLE_MAKE=True,VEHICLE_MODEL=True,VEHICLE_YEAR=True,TRAVEL_DIRECTION=True,VEHICLE_OCCUPANTS=True,DRIVER_SEX=True,DRIVER_LICENSE_STATUS=True,DRIVER_LICENSE_JURISDICTION=True,PRE_CRASH=True,POINT_OF_IMPACT=True,VEHICLE_DAMAGE=True,VEHICLE_DAMAGE_1=True,VEHICLE_DAMAGE_2=True,VEHICLE_DAMAGE_3=True,PUBLIC_PROPERTY_DAMAGE=True,PUBLIC_PROPERTY_DAMAGE_TYPE=True,CONTRIBUTING_FACTOR_1=True,CONTRIBUTING_FACTOR_2=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">False</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">True</Value>
+              <Value name="NPercent">50</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="12">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="488" y="129" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_abf4c90f4b7d7f49a5db024a0bb44cae~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="488" y="189" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_c117a213057ea540bedcef4e62c61560~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="14">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="488" y="261" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_22f5eff7bce2df4ea56d97806251eec0~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="15">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="488" y="333" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_0599b6cb065fee4aa525e2236d3d0d3e~.yxdb</TempFile>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="16">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="80" y="104" width="240" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text><![CDATA[Motor_Vehicle_Collisions_-_Vehicles.tsv
+]]></Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="43">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="235" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="UNIQUE_ID" selected="True" />
+                <Field field="COLLISION_ID" selected="True" />
+                <Field field="CRASH_DATE" selected="True" />
+                <Field field="CRASH_TIME" selected="True" />
+                <Field field="VEHICLE_ID" selected="True" />
+                <Field field="STATE_REGISTRATION" selected="True" />
+                <Field field="VEHICLE_TYPE" selected="True" />
+                <Field field="VEHICLE_MAKE" selected="True" />
+                <Field field="VEHICLE_MODEL" selected="True" />
+                <Field field="VEHICLE_YEAR" selected="True" />
+                <Field field="TRAVEL_DIRECTION" selected="True" />
+                <Field field="VEHICLE_OCCUPANTS" selected="True" />
+                <Field field="DRIVER_SEX" selected="True" />
+                <Field field="DRIVER_LICENSE_STATUS" selected="True" />
+                <Field field="DRIVER_LICENSE_JURISDICTION" selected="True" />
+                <Field field="PRE_CRASH" selected="True" />
+                <Field field="POINT_OF_IMPACT" selected="True" />
+                <Field field="VEHICLE_DAMAGE" selected="True" />
+                <Field field="VEHICLE_DAMAGE_1" selected="True" />
+                <Field field="VEHICLE_DAMAGE_2" selected="True" />
+                <Field field="VEHICLE_DAMAGE_3" selected="True" />
+                <Field field="PUBLIC_PROPERTY_DAMAGE" selected="True" />
+                <Field field="PUBLIC_PROPERTY_DAMAGE_TYPE" selected="True" />
+                <Field field="CONTRIBUTING_FACTOR_1" selected="True" />
+                <Field field="CONTRIBUTING_FACTOR_2" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="UNIQUE_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="Int32" />
+                <Field name="COLLISION_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="Int32" />
+                <Field name="CRASH_DATE" size="10" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="String" />
+                <Field name="CRASH_TIME" size="5" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="String" />
+                <Field name="VEHICLE_ID" size="36" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="STATE_REGISTRATION" size="2" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="String" />
+                <Field name="VEHICLE_TYPE" size="38" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_MAKE" size="47" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_MODEL" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_YEAR" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="Int16" />
+                <Field name="TRAVEL_DIRECTION" size="9" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_OCCUPANTS" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="Int32" />
+                <Field name="DRIVER_SEX" size="1" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="String" />
+                <Field name="DRIVER_LICENSE_STATUS" size="10" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="DRIVER_LICENSE_JURISDICTION" size="8" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="PRE_CRASH" size="26" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="POINT_OF_IMPACT" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_DAMAGE" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_DAMAGE_1" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_DAMAGE_2" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE_DAMAGE_3" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="PUBLIC_PROPERTY_DAMAGE" size="11" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="PUBLIC_PROPERTY_DAMAGE_TYPE" size="500" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING_FACTOR_1" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING_FACTOR_2" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Vehicles_04112023.tsv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="666" y="55" width="518" height="362" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Motor_Vehicle_Collisions_-_Person</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="691" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>10000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Person_04112023.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="UNIQUE_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="COLLISION_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="CRASH_DATE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="CRASH_TIME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PERSON_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PERSON_TYPE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PERSON_INJURY" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PERSON_AGE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="EJECTION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="EMOTIONAL_STATUS" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="BODILY_INJURY" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="POSITION_IN_VEHICLE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="SAFETY_EQUIPMENT" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PED_LOCATION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PED_ACTION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="COMPLAINT" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PED_ROLE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING_FACTOR_1" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING_FACTOR_2" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+                <Field name="PERSON_SEX" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="956" y="129" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings>
+            <Position x="956" y="249" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">UNIQUE_ID=True,COLLISION_ID=True,CRASH_DATE=True,CRASH_TIME=True,PERSON_ID=True,PERSON_TYPE=True,PERSON_INJURY=True,VEHICLE_ID=True,PERSON_AGE=True,EJECTION=True,EMOTIONAL_STATUS=True,BODILY_INJURY=True,POSITION_IN_VEHICLE=True,SAFETY_EQUIPMENT=True,PED_LOCATION=True,PED_ACTION=True,COMPLAINT=True,PED_ROLE=True,CONTRIBUTING_FACTOR_1=True,CONTRIBUTING_FACTOR_2=True,PERSON_SEX=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">False</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">True</Value>
+              <Value name="NPercent">50</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1100" y="129" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_86e5a3d918d0d444a637b4bde221668e~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1100" y="201" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_9bb5d5bbb0cf744997ba9b6034dbdb6f~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1100" y="261" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_7d79ecb76fdc0d47973af1ed5b2f9786~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1100" y="333" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_4fcda65cddb0dd4095b316cba63596b0~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="692" y="104" width="240" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Motor_Vehicle_Collisions_-_Person.tsv</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="787" y="308" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_0df2836930653b4aa6d3a3f8d78976bb~.yxdb</TempFile>
+              <Layout>
+                <View1>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="42">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="859" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="UNIQUE_ID" selected="True" />
+                <Field field="COLLISION_ID" selected="True" />
+                <Field field="CRASH_DATE" selected="True" />
+                <Field field="CRASH_TIME" selected="True" />
+                <Field field="PERSON_ID" selected="True" />
+                <Field field="PERSON_TYPE" selected="True" />
+                <Field field="PERSON_INJURY" selected="True" />
+                <Field field="VEHICLE_ID" selected="True" />
+                <Field field="PERSON_AGE" selected="True" />
+                <Field field="EJECTION" selected="True" />
+                <Field field="EMOTIONAL_STATUS" selected="True" />
+                <Field field="BODILY_INJURY" selected="True" />
+                <Field field="POSITION_IN_VEHICLE" selected="True" />
+                <Field field="SAFETY_EQUIPMENT" selected="True" />
+                <Field field="PED_LOCATION" selected="True" />
+                <Field field="PED_ACTION" selected="True" />
+                <Field field="COMPLAINT" selected="True" />
+                <Field field="PED_ROLE" selected="True" />
+                <Field field="CONTRIBUTING_FACTOR_1" selected="True" />
+                <Field field="CONTRIBUTING_FACTOR_2" selected="True" />
+                <Field field="PERSON_SEX" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="UNIQUE_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="Int32" />
+                <Field name="COLLISION_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="Int32" />
+                <Field name="CRASH_DATE" size="10" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="String" />
+                <Field name="CRASH_TIME" size="5" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="String" />
+                <Field name="PERSON_ID" size="36" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PERSON_TYPE" size="15" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PERSON_INJURY" size="11" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="String" />
+                <Field name="VEHICLE_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="Int32" />
+                <Field name="PERSON_AGE" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="Int16" />
+                <Field name="EJECTION" size="17" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="EMOTIONAL_STATUS" size="14" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="BODILY_INJURY" size="20" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="POSITION_IN_VEHICLE" size="86" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="SAFETY_EQUIPMENT" size="40" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PED_LOCATION" size="57" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PED_ACTION" size="47" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="COMPLAINT" size="34" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PED_ROLE" size="15" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING_FACTOR_1" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING_FACTOR_2" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="V_String" />
+                <Field name="PERSON_SEX" size="1" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Person_04112023.tsv" type="String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1266" y="54" width="517" height="373" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Motor_Vehicle_Collisions_-_Crashes</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="17">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="1291" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>10000</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>True</QuoteRecordBreak>
+                <CodePage>65001</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Motor_Vehicle_Collisions_-_Crashes_04112023.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CRASH DATE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CRASH TIME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="BOROUGH" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="ZIP CODE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="LATITUDE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="LONGITUDE" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="LOCATION" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="ON STREET NAME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CROSS STREET NAME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="OFF STREET NAME" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF PERSONS INJURED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF PERSONS KILLED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF PEDESTRIANS INJURED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF PEDESTRIANS KILLED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF CYCLIST INJURED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF CYCLIST KILLED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF MOTORIST INJURED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="NUMBER OF MOTORIST KILLED" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 1" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 2" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 3" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 4" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 5" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="COLLISION_ID" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 1" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 2" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 3" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 4" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 5" size="10000" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+            <Position x="1555" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Limit_UniqueCount>10000</Limit_UniqueCount>
+              <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+              <IsMetric value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings>
+            <Position x="1555" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Select Fields">CRASH DATE=True,CRASH TIME=True,BOROUGH=True,ZIP CODE=True,LATITUDE=True,LONGITUDE=True,LOCATION=True,ON STREET NAME=True,CROSS STREET NAME=True,OFF STREET NAME=True,NUMBER OF PERSONS INJURED=True,NUMBER OF PERSONS KILLED=True,NUMBER OF PEDESTRIANS INJURED=True,NUMBER OF PEDESTRIANS KILLED=True,NUMBER OF CYCLIST INJURED=True,NUMBER OF CYCLIST KILLED=True,NUMBER OF MOTORIST INJURED=True,NUMBER OF MOTORIST KILLED=True,CONTRIBUTING FACTOR VEHICLE 1=True,CONTRIBUTING FACTOR VEHICLE 2=True,CONTRIBUTING FACTOR VEHICLE 3=True,CONTRIBUTING FACTOR VEHICLE 4=True,CONTRIBUTING FACTOR VEHICLE 5=True,COLLISION_ID=True,VEHICLE TYPE CODE 1=True,VEHICLE TYPE CODE 2=True,VEHICLE TYPE CODE 3=True,VEHICLE TYPE CODE 4=True,VEHICLE TYPE CODE 5=True</Value>
+              <Value name="Sample Data">False</Value>
+              <Value name="Number">False</Value>
+              <Value name="NNumber">5000</Value>
+              <Value name="Percent">True</Value>
+              <Value name="NPercent">20</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Predictive Tools\Field_Summary_Report.yxmc" />
+        </Node>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1699" y="127" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_aaf349acbc16614599b50b6e45d3ad68~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Profile</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1699" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_ce6e59cf8ce43245960ec1b94231304b~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1699" y="271" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_a115052e2cc97f40aecfb04ed7794962~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="23">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1699" y="343" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\Users\ankur\AppData\Local\Temp\Engine_5776_76a0e87a94a3b0429d5cb79fd7405c44_\Engine_5776_04e8c06e1bafdc43a08b278167dbe151~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>Report</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="24">
+          <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+            <Position x="1291" y="103" width="240" height="40" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Text>Motor_Vehicle_Collisions_-_Crashes.tsv</Text>
+              <Font name="Arial" size="8.25" style="0" />
+              <TextColor name="Black" />
+              <FillColor name="White" />
+              <Shape shape="0" />
+              <Justification Justification="4" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+        </Node>
+        <Node ToolID="41">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+            <Position x="1435" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Fields>
+                <Field field="CRASH DATE" selected="True" />
+                <Field field="CRASH TIME" selected="True" />
+                <Field field="BOROUGH" selected="True" />
+                <Field field="ZIP CODE" selected="True" />
+                <Field field="LATITUDE" selected="True" />
+                <Field field="LONGITUDE" selected="True" />
+                <Field field="LOCATION" selected="True" />
+                <Field field="ON STREET NAME" selected="True" />
+                <Field field="CROSS STREET NAME" selected="True" />
+                <Field field="OFF STREET NAME" selected="True" />
+                <Field field="NUMBER OF PERSONS INJURED" selected="True" />
+                <Field field="NUMBER OF PERSONS KILLED" selected="True" />
+                <Field field="NUMBER OF PEDESTRIANS INJURED" selected="True" />
+                <Field field="NUMBER OF PEDESTRIANS KILLED" selected="True" />
+                <Field field="NUMBER OF CYCLIST INJURED" selected="True" />
+                <Field field="NUMBER OF CYCLIST KILLED" selected="True" />
+                <Field field="NUMBER OF MOTORIST INJURED" selected="True" />
+                <Field field="NUMBER OF MOTORIST KILLED" selected="True" />
+                <Field field="CONTRIBUTING FACTOR VEHICLE 1" selected="True" />
+                <Field field="CONTRIBUTING FACTOR VEHICLE 2" selected="True" />
+                <Field field="CONTRIBUTING FACTOR VEHICLE 3" selected="True" />
+                <Field field="CONTRIBUTING FACTOR VEHICLE 4" selected="True" />
+                <Field field="CONTRIBUTING FACTOR VEHICLE 5" selected="True" />
+                <Field field="COLLISION_ID" selected="True" />
+                <Field field="VEHICLE TYPE CODE 1" selected="True" />
+                <Field field="VEHICLE TYPE CODE 2" selected="True" />
+                <Field field="VEHICLE TYPE CODE 3" selected="True" />
+                <Field field="VEHICLE TYPE CODE 4" selected="True" />
+                <Field field="VEHICLE TYPE CODE 5" selected="True" />
+                <Field field="*Unknown" selected="False" />
+              </Fields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="CRASH DATE" size="10" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="String" />
+                <Field name="CRASH TIME" size="5" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="String" />
+                <Field name="BOROUGH" size="13" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="ZIP CODE" size="5" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="String" />
+                <Field name="LATITUDE" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Double" />
+                <Field name="LONGITUDE" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Double" />
+                <Field name="LOCATION" size="25" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="String" />
+                <Field name="ON STREET NAME" size="32" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="CROSS STREET NAME" size="32" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="OFF STREET NAME" size="40" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="NUMBER OF PERSONS INJURED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF PERSONS KILLED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF PEDESTRIANS INJURED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF PEDESTRIANS KILLED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF CYCLIST INJURED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF CYCLIST KILLED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF MOTORIST INJURED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="NUMBER OF MOTORIST KILLED" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Byte" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 1" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 2" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 3" size="53" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 4" size="43" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="CONTRIBUTING FACTOR VEHICLE 5" size="43" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="COLLISION_ID" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="Int32" />
+                <Field name="VEHICLE TYPE CODE 1" size="38" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_WString" />
+                <Field name="VEHICLE TYPE CODE 2" size="38" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE TYPE CODE 3" size="35" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE TYPE CODE 4" size="35" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+                <Field name="VEHICLE TYPE CODE 5" size="35" source="File: C:\Users\ankur\OneDrive - Northeastern University\Spring_2023\DAMG7370\Assignment_10G\NYC_Motor_Vehicle_Collisions\Dataset\Motor_Vehicle_Collisions_-_Crashes_04112023.tsv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Reports" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Interactive" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="11" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="42" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Reports" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Interactive" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output" />
+      <Destination ToolID="3" Connection="Field Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Reports" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Interactive" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output" />
+      <Destination ToolID="19" Connection="Field Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>01_data_profiling</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="210a0fe0-1a1e-4be4-bb36-d677b62a37c8" />
+      <Telemetry>
+        <PreviousWorkflowId value="f0f5e23e-1540-4c8a-b8ca-590d7b7cdb52" />
+        <OriginWorkflowId value="f0f5e23e-1540-4c8a-b8ca-590d7b7cdb52" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
