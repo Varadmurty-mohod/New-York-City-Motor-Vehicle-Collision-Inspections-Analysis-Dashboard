@@ -1,5 +1,6 @@
 # New-York-Restaurant-Inspections-Analysis-Dashboard
-<img width="1232" alt="Screenshot 2023-05-07 at 11 22 05 PM" src="https://user-images.githubusercontent.com/69577585/236728474-04139377-d6f3-4166-a67a-7fc8cc083177.png">
+
+<img width="1215" alt="Screenshot 2023-05-08 at 12 29 22 AM" src="https://user-images.githubusercontent.com/69577585/236734119-a5d9b1db-648a-4782-8871-a46d806b4dd6.png">
 <img width="1232" alt="Screenshot 2023-05-07 at 11 22 18 PM" src="https://user-images.githubusercontent.com/69577585/236728477-f0f286df-cbfc-4e63-b062-bb1cc561400a.png">
 <img width="1228" alt="Screenshot 2023-05-07 at 11 22 29 PM" src="https://user-images.githubusercontent.com/69577585/236728479-71634d28-d5b4-45f9-9e0e-c95d210a1acf.png">
 <img width="1232" alt="Screenshot 2023-05-07 at 11 22 38 PM" src="https://user-images.githubusercontent.com/69577585/236728480-e5761d6a-dea9-4a3b-a242-7b6bae265aa9.png">
