@@ -1,0 +1,833 @@
+[ {
+  "baseItem" : {
+    "id" : "_-ZbPgHDnEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_CONTRIBUTING_FACTOR",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_vehicles",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_-z32cN4tEe2n6olRqIA-sA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_1UkhkGL2Ee2AnMTkTRU9Uw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_City",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_County",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Rej_City",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_1mvrsN2BEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_1uOi8G4TEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_5aVdYHA5Ee2OU8GQnE-SvQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_BODILY_INJURY",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_COMPLAINT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_EJECTION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_EMOTIONAL_STATUS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PED_ACTION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PED_LOCATION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PED_ROLE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PERSON_INJURY",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PERSON_SEX",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_POSITION_IN_VEHICLE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PersonType",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_SAFETY_EQUIPMENT",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_75k1cN5iEe2n6olRqIA-sA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_7DIlkG4oEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_9Y-3IGOqEe2-TIX5peAuRQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_Liquor_Product_Categories",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_Liquor_Vendors",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_AZZU4N5REe2n6olRqIA-sA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_B7bfQG3KEe23Q8f-83I2Mg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_BPAm8N2QEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_ESt9AGPVEe2S0fr-FYQj7Q",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - FCT_Iowa_Liquor_Sales_Invoice_Header",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_FMaikN2OEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_GUsFAHEsEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Iw2NIHEmEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - fct_collision_crashes_vehicles",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_JBzvcG3zEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_LMIsgN2SEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_LmjLEGOVEe2RvfeXiPycdw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_MaqPcHEFEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_VEHICLE_DAMAGE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_NQJTIN54Ee2n6olRqIA-sA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw - fct_collision_crashes",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_NcmiIG4nEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_QJbwIN2WEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_R-zCUG4kEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Rxku8HDzEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_CONTRIBUTING_FACTOR",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_TCQwcHBTEe2TJ-3o8GApPA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_DRIVER_LICENSE_JURISDICTION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_DRIVER_LICENSE_STATUS",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PERSON_SEX",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_POINT_OF_IMPACT",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PRE_CRASH",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_PUBLIC_PROPERTY_DAMAGE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_STATE_REGISTRATION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_TRAVEL_DIRECTION",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_VEHICLE_MAKE",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_VEHICLE_MODEL",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_VEHICLE_TYPE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_TRx3wGOdEe2RvfeXiPycdw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_City",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_County",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_Liquor_Stores",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_WUpakN2pEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_WzBU8G6VEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_persons",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_Za474G3hEe23Q8f-83I2Mg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__UUvgG6MEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_persons",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "__izPsG-lEe2fU-jHm15KDg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_aXgJwG4QEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_e9D00G6uEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_eWOMcG3sEe23Q8f-83I2Mg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_CONTRIBUTING_FACTOR",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_eyENsGLlEe27HJdBxIlbVQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_fG-esG4SEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_g3scwHAzEe2OU8GQnE-SvQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_gf_boHEpEe2glPR-LD7RXQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_hKUBgG3oEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_iVVikG6KEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_persons",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_jMR7MG6WEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_vehicles",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_lR31cG7oEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_lv5-cG6qEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_mc9dwN2wEe2ZvPkILzhTxw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_rleNcG4XEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_tDjJEG3XEe23Q8f-83I2Mg",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_u1xtkGPEEe2td-TTCO9bHw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_City",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_County",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - stg_iowa_city_population_by_year",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - stg_iowa_county_population_by_year",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_ui0roHAVEe2jGYuSPWd5-Q",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_uqREUGPIEe2td-TTCO9bHw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Date",
+    "version" : "Latest",
+    "type" : "schema"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_Liquor_Stores",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_wBBxkN5LEe2n6olRqIA-sA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_r9dn0N2CEe2ZvPkILzhTxw",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_wthWEHBsEe2GdJI405ILDQ",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - fct_collision_crashes",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_x9m0AG3yEe29pfpXp0yhyA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - stg_nyc_mv_collision_persons",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_yB30sG4NEe2A0oWygBUgCA",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_zNeEMGOQEe2RvfeXiPycdw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_b-j-YFZ7Ee2af9GCHmP4tA - Dim_Iowa_Liquor_Vendors",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+}, {
+  "baseItem" : {
+    "id" : "_zYnaIG9KEe2ZYY6pW3HAmw",
+    "version" : "0.1",
+    "type" : "job"
+  },
+  "relatedItems" : [ {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg",
+    "version" : "Latest",
+    "type" : "property"
+  }, {
+    "id" : "_oapFoGk0Ee2cu75ObHcLXg - Dim_VEHICLE_DAMAGE",
+    "version" : "Latest",
+    "type" : "schema"
+  } ]
+} ]
